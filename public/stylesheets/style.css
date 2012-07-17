@@ -1,0 +1,719 @@
+/* Common font style for all pages */
+
+body {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; margin: 0px;}
+body, p, ol, ul,td {font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color: #000000;}
+
+/* common link style for all pages */
+a{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #0174AA;}
+a:hover{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:underline; color: #0174AA;}
+
+/* header and footer background */
+.header_bg{ background-image: url(/public/images/bg_header.gif); background-repeat: repeat-x;}
+.footer_bg{background-image: url(/public/images/bg_footer.gif); background-repeat: repeat-x; padding:1% 0; margin:1.5% 0 0 0;}
+
+/* footer text link */
+.footer_text{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #000000;}
+.footer_text a:link{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #0174AA;} 
+.footer_text a:visited{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #0174AA;} 
+.footer_text a:active{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #0174AA;} 
+.footer_text a:hover{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration: underline; color: #0174AA;} 
+
+/* top tab menu links */
+.submenu{font-family: Arial, Helvetica, sans-serif;font-size: 12px;color: #000000;text-decoration: none;}
+.submenu a:link{font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; margin: 0px; text-decoration: none;}
+.submenu a:active{font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; margin: 0px; text-decoration: underline;}
+.submenu a:visited{font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; margin: 0px; text-decoration: underline;}
+.submenu a:hover{font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; margin: 0px; text-decoration: none;}
+
+/* heighlighted new tip msg box*/
+.infobar
+{ background-color: #FFFFEE; border: 1px dotted #FFCC99; height: 25px; padding-top: 0.5em; padding-bottom: 0.5em; }
+
+/* main title text for all pages */
+.heading{font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #282828; text-decoration: none; line-height: 25px;}
+
+/* sub heading title text for all pages */
+.sub_heading{ font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #296889; line-height: 25px; font-weight: bold; }
+
+/* tip note message for all pages */
+.tipmsg{ background-color: #EFF8FC; border: 1px dotted #0080C0; height: 25px; padding-top: 0.5em; padding-bottom: 0.5em; }
+
+/* <--------------------Forms and buttons style ------------------- */
+
+/* all pages table header background style */
+
+.subpageTable
+{
+	background-image:url(public/images/table_bg.gif);
+	background-repeat:repeat-x;
+	vertical-align:middle;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#333333;
+	padding-left:5px;
+	text-transform:none;
+	height: 20px;
+}
+/* all pages table border */
+.subpagetableborder
+{
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-left-color: #cccccc;
+
+	}
+	
+/* start a campaign and create ads page heighlighted row style */	
+.highlighted_td{
+	background-color: #CCCCCC;
+}
+
+/* for all page top search and highlighted text fields backgound color */
+
+.heighlighted_bg{
+	background-color: #f9f9f9;
+}
+
+/* taxfield font and width size style */
+
+.forms_button{ }
+.textfield{ width: 200px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; }
+.textarea{ width: 250px; height:75px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;}
+.dropdown{width: 150px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight:normal;}
+
+/* all forms mandatory font color style */
+
+.mandatory{
+font:Arial, Helvetica, sans-serif;
+color:#FF0000;
+font-size:13px;
+}
+
+/* forms information font text style */
+
+.greytext{
+font:Arial, Helvetica, sans-serif;
+color:#666666;
+font-size:12px;
+}
+
+/*end */
+
+/* <-------------------upload images box--------------------------- */
+
+/* "start a campaign" add images background style */
+.xl_image {
+	background-image: url(public/images/bg-fade.gif);
+	background-repeat: repeat-x;
+	height: 64px;
+	width: 305px;
+	border: 1px dotted #3399CC;
+}
+.large_image {
+	background-image: url(public/images/bg-fade.gif);
+	background-repeat: repeat-x;
+	height: 34px;
+	width: 215px;
+	border: 1px dotted #3399CC;
+}
+
+.medium_image {
+	background-image: url(public/images/bg-fade.gif);
+	background-repeat: repeat-x;
+	height: 30px;
+	width: 167px;
+	border: 1px dotted #3399CC;
+}
+
+.small_image {
+	background-image: url(public/images/bg-fade.gif);
+	background-repeat: repeat-x;
+	height: 20px;
+	width: 112px;
+	border: 1px dotted #3399CC;
+}
+.gen_image {
+	background-image: url(public/images/bg-fade.gif);
+	background-repeat: repeat-x;
+	height: 16px;
+	width: 90px;
+	border: 1px dotted #3399CC;
+}
+/* end */
+
+/* Landing home page template chooser background Style */
+
+.temp_bg{
+	background-image: url(public/images/landing/tem_bg.jpg);
+	background-repeat: repeat-x;
+	height: 185px;
+	width: 155px;
+}
+
+/* landing page template subtitle font style */
+
+.subtitle{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#333333;
+	text-transform:none;
+	height: 20px;
+	}
+
+/* create wap landing page drag and drop widget*/		
+.wl_top{background-image:url(public/images/landing/wl_top.jpg); width:616px;}
+.wl_centre{background-image:url(public/images/landing/wl_cen.jpg); width:616px;}
+.wl_bottom{background-image:url(public/images/landing/wl_bot.jpg); width:616px; height:29px;}
+.div_drag{width: 616px;}
+/* end */
+
+/*<---------------analytics style------------------ */
+
+/* analytics section all pages top search table backgrond style*/
+.link_strip{
+	background-color: #FBFBFB;
+	
+}
+
+/* analytics top search text font and link style */
+
+.report_text{font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color: #000000;text-decoration:none;}
+.report_text a:link{font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color: #000000;text-decoration:underline;}
+.report_text a:visited{font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color: #000000;text-decoration:underline;}
+.report_text a:active{font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color: #000000;text-decoration:underline;}
+.report_text a:hover{font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:18px; color: #000000; text-decoration:none;}
+
+/* analytics show text button style text link */
+/*.show_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #666666;
+	vertical-align: middle;
+	display: block;
+	border: 1px solid #666666;
+	font-weight: bold;
+}
+.show_text a:link{font-family:Arial, Helvetica, sans-serif;font-size: 13px;color: #FFFFFF; text-decoration: underline ;background-color: #666666;}
+.show_text a:active{font-family:Arial, Helvetica, sans-serif;font-size: 13px;color: #FFFFFF; text-decoration: underline ;background-color: #666666;}
+.show_text a:visited{font-family:Arial, Helvetica, sans-serif;font-size: 13px;color: #FFFFFF; text-decoration: underline ;background-color: #666666;}
+.show_text a:hover{	font-family:Arial, Helvetica, sans-serif;font-size: 13px;color: #FFFFFF; text-decoration: none ;background-color: #666666;} */
+
+/* analytics home page widget main border style */
+.widget_box {
+	border: 1px solid #eeeeee;
+}
+
+/* analytics home page widget main header style */
+.widget_header {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #666666;
+	height: 22px;
+	font-weight: bold;
+}
+/* analytics home page widget footer style */
+.widget_footer{
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #E5E5EB;
+	height: 22px;
+	font-weight: bold;
+}
+
+/* Start a campaign and create ads right panel Emulator Menus */
+
+.basictab ul{
+	margin: 4px;
+	padding: 3px 0;
+	margin-left: 0;
+	font: bold 12px Verdana;
+	list-style-type: none;
+	text-align: left; /*set to left, center, or right to align the menu as desired*/
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+.basictab li{
+display: inline;
+margin: 0;
+}
+
+.basictab li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #cccccc;
+border-bottom: none;
+background-color: #F4F4F4;
+color: #2d2b2b;
+}
+
+.basictab li a:visited{
+color: #2d2b2b;
+}
+
+.basictab li a:hover, .basictab li a.current{
+background-color: #FFFFFF;
+color: black;
+}
+
+.basictab li a:active{
+color: black;
+}
+
+#tabcontentcontainer{
+width:95%; 
+height:1.5em; 
+}
+
+.tabcontent{
+display:none;
+}
+
+#content_s { width:128px; border:1px solid #cccccc; height: auto; }
+#content_m {width:176px; border:1px solid #cccccc; height: auto; }
+#content_l { width:240px; border:1px solid #cccccc; height: auto;}
+#content_xl { width:320px; border:1px solid #cccccc; height: auto;}
+
+.content_hd_s{ background-image: url(public/images/createads/emulator_bg_s.gif); background-repeat: no-repeat; height: 21px; width: 128px;}
+.content_hd_m{ background-image: url(public/images/createads/emulator_bg_m.gif); background-repeat: no-repeat; height: 21px; width: 176px;}
+.content_hd_l{ background-image: url(public/images/createads/emulator_bg_l.gif); background-repeat: no-repeat; height: 21px; width: 240px;}
+.content_hd_xl{ background-image: url(public/images/createads/emulator_bg_xl.gif); background-repeat: no-repeat; height: 21px; width: 320px;}
+
+/* publisher install site code script showing box style */ 
+
+.install_codebox{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+
+/* emulator menus end */
+
+.cell_dark_bg{
+	background-color: #EBF5FC;
+}
+.cell_light_bg{ 
+	background-color:#FFFFFF;
+}
+
+.cell_dark_bg_url{
+	background-color: #EBF5FC;
+}
+.cell_light_bg_url{ 
+	background-color:#FFFFFF;
+}
+
+/* bullet box */
+
+.bulletbox_b{
+	background-color:#6495ED;
+	height: 10px;
+	width: 10px;
+}
+
+.bulletbox_lm{
+	background-color:#E6967B;
+	height: 10px;
+	width: 10px;
+}
+
+.bulletbox_y{
+	background-color:#FFFF00;
+	height: 10px;
+	width: 10px;
+}
+
+.bulletbox_g{
+	background-color:#32CD32;
+	height: 10px;
+	width: 10px;
+}
+
+/* end */
+
+/* analytics pagination link */
+A.paginate:link {
+	font-family:"Trebuchet MS";
+	font-size: 12px;
+	color:#0059B3; 
+	text-decoration:none;
+	text-align:left;
+	}
+A.paginate:visited {
+	font-family:"Trebuchet MS";
+	font-size: 14px;
+	color:#0059B3; 
+	text-decoration:none;
+	text-align:left;
+}
+A.paginate:hover {
+	font-family:"Trebuchet MS";
+	font-size: 14px;
+	color:#699AB8; 
+	text-decoration:none;
+	text-align:left;
+}
+
+.pagination{
+	background-color:#FFFFFF;
+	padding: 2px 6px;
+}
+
+.pagination ul{
+margin: 6px 0;
+#padding: 0;
+white-space:nowrap;
+text-align: right; /*Set to "right" to right align pagination interface*/
+font-size: 16px;
+}
+
+.pagination li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.pagination a, .pagination a:visited{
+background-color: #FFFFFF;
+    /*border: 1px solid #B2DCF4;*/
+    color: #000000;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.pagination a:hover, .pagination a:active{
+/*border: 1px solid #2b66a5;
+color: #000;
+background-color: #D5EEFB;*/
+}
+.pagination inactive{
+	color: #000000;
+}
+.pagination a.currentpage{
+	padding: 0 5px;
+	background-color: #D5EEFB;
+	color: #000000!important;
+	font-weight: bold;
+	cursor: default;
+	border-top-color: #89AFC7;
+	border-right-color: #89AFC7;
+	border-bottom-color: #89AFC7;
+	border-left-color: #89AFC7;
+}
+
+.pagination a.disablelink, .pagination a.disablelink:hover{
+	background-color: white;
+	cursor: default;
+	color: #000000;
+	font-weight: normal !important;
+	border-top-color: #B2DCF4;
+	border-right-color: #B2DCF4;
+	border-bottom-color: #B2DCF4;
+	border-left-color: #B2DCF4;
+}
+
+.pagination a.prevnext{
+font-weight: bold;
+}
+/* analytics title */
+
+.analytics_title {font-family:Arial, Helvetica, sans-serif; font-size: 25px; line-height:30px; color:#FFFFFF;}
+
+/* analytics widget heading */
+.widget_text{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size: 15px;
+	line-height: 26px;
+	text-align:left;
+	padding-left:5px;
+}
+
+.widget_textnum{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-weight:bold;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.widget_greytext{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666666;
+	font-size: 14px;
+}
+
+.view_report{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #000000;}
+.view_report a:link{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #000000;}
+.view_report a:visited{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #000000;}
+.view_report a:active{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #000000;}
+.view_report a:hover{font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #000000;}
+
+/* analytics top panels style start*/
+
+.panels_active{
+	border:1px solid #CCCCCC;
+	float:left;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 25px;
+	color:#000000;
+	vertical-align: middle;
+	height:50px;
+	width:100%;
+	background-image:url(public/images/analytic/ana_bg_a.gif);
+	background-repeat: repeat;
+	cursor:pointer;
+	
+}
+
+.panels_hover{
+	border:1px solid #CCCCCC;
+	float:left;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 25px;
+	color:#000000;
+	vertical-align: middle;
+	height:50px;
+	width:100%;
+	background-image:url(public/images/analytic/ana_bg_h.gif);
+	background-repeat: repeat;
+	cursor:pointer;
+
+}
+
+.panels_visited{
+	border:1px solid #CCCCCC;
+	float:left;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 25px;
+	color:#FFFFFF;
+	vertical-align:middle;
+	height:50px;
+	width:100%;
+	background-image:url(public/images/analytic/ana_bg_v.gif);
+	background-repeat: repeat;
+	cursor:pointer;
+}
+
+/* analytics panel style end */
+.nodata_indicator{
+	background-image: url(public/images/indicator.gif);
+	background-repeat:no-repeat;
+	line-height: 150px;
+	background-position: center;
+	vertical-align: middle;
+	}
+
+.nodata_linechart_b{
+	background-image: url(public/images/analytic/default_linechart_b.gif);
+	background-repeat:no-repeat;
+	height:198px;
+	background-position: center;
+	vertical-align: middle;
+	}
+
+.nodata_linechart{
+	background-image: url(public/images/analytic/default_linechart.gif);
+	background-repeat:no-repeat;
+	background-position: center;
+	line-height: 150px;
+	vertical-align: middle;
+	}
+
+.nodata_piechart{
+	background-image: url(public/images/analytic/default_piechart.gif);
+	background-repeat:no-repeat;
+	background-position: center;
+	line-height: 150px;
+	vertical-align: middle;
+	}
+
+.nodata_barchart{
+	background-image: url(public/images/analytic/default_barchart.gif);
+	background-repeat:no-repeat;
+	background-position: center;
+	line-height: 150px;
+	vertical-align: middle;
+}
+
+.nodata_mapchart{
+	background-image: url(public/images/analytic/default_mapchart.gif);
+	background-repeat:no-repeat;
+	background-position: center;
+	line-height: 150px;
+	vertical-align: middle;
+}
+.nodata_td{
+	background-image: url(public/images/analytic/nodata.gif);
+	background-repeat:no-repeat;
+	background-position: center;
+	line-height: 150px;
+	vertical-align: middle;
+}
+
+.chart_title{
+font-family: "Arial Rounded MT Bold";
+font-size: 16px; 
+color:#585858; 
+line-height: 25px;
+text-align:center;
+vertical-align:top;
+font-weight:500;
+}
+.Inputtext{
+cursor:pointer;
+}
+.err_text{color:#FF0000;}
+.formtag{ margin:0px;}
+.sidemenu_heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #484646;
+	background-color: #E4F5FF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C9CECA;
+	line-height: 30px;
+	padding-left: 15px;
+}
+.sidemenus {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #F7F8F9;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C9CECA;
+	line-height: 20px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
+}
+.side_menu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666666;
+	text-decoration: none;
+	padding-left: 10px;
+	font-weight: normal;
+}
+.sidetext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1C1D1D;
+	text-decoration: none;
+	padding: 5px;
+	margin: 10px;
+}
+.blubox_text {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #252424;
+	text-decoration: none;
+	background-color: #E8F7FF;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #DCDBDB;
+}
+.graybox {
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #FBFBFB;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #DCDBDB;
+}
+.greu_dash {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #BAB7B7;
+	padding-bottom: 4px;
+}
+.gray_heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #484646;
+	text-decoration: none;
+}
+.table_headings {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px;
+	background-color: #E1E1E1;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #9BA4A8;
+}
+.table_content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px;
+	background-color: #F7F7F7;
+}
+.nav_link {font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration:none; color: #0174AA;}
+
+.errormsg{
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #FFFBE6;
+	border:1px dotted #cccccc;
+	margin:3px;
+	padding:3px; 
+
+}
+
+
+
+/* new css for RTB section created by jayanthi date 18 apr 2012 */
+
+.cwrapper{ margin:0 auto; padding:.5%;}
+
+.config{ padding:1%;}
+
+.clear{ clear:both;}
+#subhead{ float:left; margin:0; padding:0;}
+#subhead h2{ font-size:1.7em; color:#f20000; font-weight:normal; margin:0 0 2% 0;}
+
+.menu{ float:right; width:675px; }

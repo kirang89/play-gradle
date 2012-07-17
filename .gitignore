@@ -1,0 +1,29 @@
+*.class
+
+# Package Files #
+#################
+
+*.jar
+*.war
+*.ear
+*.zip
+
+# Ignore Play! working directory #
+##################################
+
+db
+eclipse
+lib
+log
+logs
+modules
+precompiled
+tmp
+test-result
+server.pid
+modules
+
+# Gradle generate Files #
+##########################
+
+.gradle/

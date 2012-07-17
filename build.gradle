@@ -1,0 +1,63 @@
+buildscript{
+	repositories{
+		mavenLocal()
+		mavenCentral()
+	}
+}
+
+def zipVersion = 1.0
+def zipDir = 'resources/'
+
+task backupResources {
+}
+
+task backupJS(type:Copy){
+	from ('public/javascripts') {
+		include '*.js'
+	}
+	into 'resources/javascripts'
+}
+
+task backupCSS(type:Copy){
+	from ('public/stylesheets') {
+		include '*.css'
+	}
+	into 'resources/stylesheets'
+}
+
+task backupImages(type:Copy){
+	from ('public/images') {
+		include '*.png'
+	}
+	into 'resources/images'
+}
+
+task zip(type:Zip){
+	baseName = projectDir.name
+	version = zipVersion
+
+	from("resources/") {
+		into 'resources'
+	}
+
+	from('app/controllers/'){
+		into 'controllers'
+	}
+
+	from('app/views/'){
+		exclude 'errors'
+		into 'views'
+	}
+
+	from('conf/'){
+		into 'conf'
+	}
+	
+}
+
+task tgz(type:Tar){
+	from zip.rootSpec
+	compression = compression.GZIP
+}
+
+backupResources.dependsOn backupJS,backupCSS,backupImages
