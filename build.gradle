@@ -1,12 +1,43 @@
+apply plugin: 'java'
+apply plugin: 'js'
+
 buildscript{
 	repositories{
 		mavenLocal()
 		mavenCentral()
 	}
+	
+	dependencies{
+		compile ("log4j:log4j:1.2.15"){
+			exclude group:'javax.jms'
+			exclude group:'com.sun.jdmk'
+			exclude group:'com.sun.jmx'
+		}
+
+		compile 'org.apache.hbase:hbase:0.94.0'
+	}
 }
 
 def zipVersion = 1.0
 def zipDir = 'resources/'
+def jsSrcDir = 'public/javascripts'
+
+combineJs {
+	source = file(jsSrcDir)
+	include "*.js"
+	exclude "*.min.js"
+	dest = file("public/javascripts/all.js")
+}
+
+minifyJs {
+	source = combineJs
+	println source
+	dest = file("public/javascripts/all.min.js")
+	closure{
+		compilationLevel = 'SIMPLE_OPTIMIZATIONS'
+		warningLevel = 'QUIET'
+	}
+}
 
 task backupResources {
 }
@@ -59,5 +90,67 @@ task tgz(type:Tar){
 	from zip.rootSpec
 	compression = compression.GZIP
 }
+
+//*************************Play related tasks*************************
+
+task playClean(type: Exec){
+	commandLine 'play','clean'
+}
+
+task playRun(type: Exec){
+	commandLine 'play','run'
+}
+
+task playDevMode(type: Exec){
+	commandLine 'play','run','--%dev'
+}
+
+task playProdMode(type: Exec){
+	commandLine 'play','run','--%prod'
+}
+
+task playTestMode(type: Exec){
+	commandLine 'play','test'
+} 
+
+task playEclipsify(type: Exec){
+	commandLine 'play','eclipsify'
+}
+
+task playNetbeansify(type: Exec){
+	commandLine 'play','netbeansify'
+}
+
+task playIdealize(type: Exec){
+	commandLine 'play','idealize'
+}
+
+task playRunAutoTests(type: Exec){
+	commandLine 'play','auto-test'
+}
+
+task playStartApp(type:Exec){
+	commandLine 'play','start'
+}
+
+task playStopApp(type:Exec){
+	commandLine 'play','stop'
+}
+
+task playRestartApp(type:Exec){
+	commandLine 'play','start'
+}
+
+//*************************End of Play related tasks*******************
+
+//*************************Gradle Build*******************
+
+task buildProject(type: GradleBuild){
+	//buildFile = 'build.gradle'
+	//dir = 'app/controllers/Application.java'
+	tasks = ['playClean','playStartApp']
+}
+
+//*************************End of Gradle Build*******************
 
 backupResources.dependsOn backupJS,backupCSS,backupImages
